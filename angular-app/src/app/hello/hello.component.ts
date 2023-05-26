@@ -6,17 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello.component.css'],
 })
 export class HelloComponent {
-  title: string;
-  message: string;
-  count: number;
+  title = 'Hello-app';
+  message = 'This is My First Component!!';
+  input = '';
 
-  constructor() {
-    this.title = 'Hello-app';
-    this.message = 'This is My First Component!!';
-    this.count = 0;
-  }
+  constructor() {}
 
-  doClick() {
-    this.message = ++this.count + '回、クリックしました。';
+  doType(val: string) {
+    this.input = val;
+    this.message = 'you type: ' + this.input;
   }
 }
