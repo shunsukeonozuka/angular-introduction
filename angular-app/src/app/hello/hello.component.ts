@@ -8,19 +8,11 @@ import { Component } from '@angular/core';
 export class HelloComponent {
   title: string;
   message: string;
-  now: Date;
+  styleClass: string;
 
   constructor() {
     this.title = 'Hello-app';
     this.message = 'This is My First Component!!';
-    this.now = new Date();
-
-    setInterval(() => {
-      this.now = new Date();
-    }, 1000);
-  }
-
-  today() {
-    return this.now.toLocaleString();
+    this.styleClass = 'red';
   }
 }
