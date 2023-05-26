@@ -8,16 +8,15 @@ import { Component } from '@angular/core';
 export class HelloComponent {
   title: string;
   message: string;
-  styleClass: string;
+  count: number;
 
   constructor() {
     this.title = 'Hello-app';
     this.message = 'This is My First Component!!';
-    this.styleClass = 'red';
+    this.count = 0;
+  }
 
-    setInterval(() => {
-      this.styleClass = this.styleClass === 'red' ? '' : 'red';
-      console.log(this.styleClass);
-    }, 1000);
+  doClick() {
+    this.message = ++this.count + '回、クリックしました。';
   }
 }
