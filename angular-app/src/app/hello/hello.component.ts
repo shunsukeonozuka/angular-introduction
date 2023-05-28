@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-hello',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class HelloComponent {
   title = 'Hello-app';
   message = 'ngModelを使う';
-  text1 = '';
+  myControl = new FormControl('ok.');
 
   constructor() {}
 }
