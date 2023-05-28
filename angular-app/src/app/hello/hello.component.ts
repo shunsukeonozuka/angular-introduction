@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
   title = 'Hello-app';
-  message = 'select menu:';
-  switch = 'one';
+  message = 'ngModelを使う';
+  text1 = '';
 
   constructor() {}
-
-  doSelect(val: string) {
-    this.switch = val;
-  }
 }
