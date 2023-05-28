@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
   title = 'Hello-app';
-  message = 'This is My First Component!!';
-  input = '';
+  message = 'please type...';
+  visible = true;
 
   constructor() {}
 
-  doType(val: string) {
-    this.input = val;
-    this.message = 'you type: ' + this.input;
+  doClick() {
+    this.visible = !this.visible;
   }
 }
