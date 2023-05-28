@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
   title = 'Hello-app';
-  message = 'please type...';
-  visible = true;
+  message = 'data list.';
+  data = ['最初の項目です。', '2番目の項目です。', '最後の項目です。'];
 
   constructor() {}
-
-  doClick() {
-    this.visible = !this.visible;
-  }
 }
