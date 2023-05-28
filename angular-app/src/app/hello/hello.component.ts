@@ -8,8 +8,12 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class HelloComponent {
   title = 'Hello-app';
-  message = 'ngModelを使う';
+  message = 'formControlを使う';
   myControl = new FormControl('ok.');
 
   constructor() {}
+
+  doClick() {
+    this.message = '「' + this.myControl.value + '」と書きましたね。';
+  }
 }
