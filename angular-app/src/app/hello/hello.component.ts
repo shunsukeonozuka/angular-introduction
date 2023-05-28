@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
   title = 'Hello-app';
-  message = 'data list.';
-  data = ['最初の項目です。', '2番目の項目です。', '最後の項目です。'];
+  message = 'select menu:';
+  switch = 'one';
 
   constructor() {}
+
+  doSelect(val: string) {
+    this.switch = val;
+  }
 }
